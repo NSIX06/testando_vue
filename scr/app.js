@@ -1,9 +1,9 @@
 const MyNameApp = {
     data() {
       return {
-        name:"",
+        name:"", //*usando o metodo com o input 
         idade: 20,
-        input_name:" "
+        input_name:" " //* Usando o método com o data binding   
         }
     },
     methods:{
@@ -11,7 +11,7 @@ const MyNameApp = {
 
             e.preventDefault();
 
-            console.log(this.input_name); //*
+            console.log(this.input_name);
 
             this.name = this.input_name;
         }
